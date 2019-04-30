@@ -1,0 +1,30 @@
+// thoughtbot.com/blog/transitions-and-transforms
+#one{
+  height: 400px;
+  width: 400px;
+  background-color: blue;
+  transition: transform 1s;
+
+  &:hover{
+    // Animate Blocks
+    transform: skewX(-45deg) rotate(360deg);
+  }
+
+
+
+
+  #two{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transition: transform 1s;
+    transform-origin: right top;
+
+    &:hover{
+      // Move and hide one block revealing whatever is underneath. Moving away once again blocks off that area.
+      transform: rotate(-360deg) translateX(800px) translateY(400px) skewX(90deg);
+    }
+  }
+
+  
+}
