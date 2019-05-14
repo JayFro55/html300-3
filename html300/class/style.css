@@ -1,0 +1,43 @@
+nav {
+    border: 2px solid purple;
+
+}
+
+ul {
+    background-color: navy;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    border: 1px solid orange;
+}
+
+li {
+    border: 1px solid black;
+    list-style-type: none;
+}
+
+.nav {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-shrink: 10;
+    border: 5px solid black;
+}
+
+.nav1 {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-shrink: .5;
+    border: 2px solid red;
+}
+
+@media (max-width: 500px) {
+    ul {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        background-color: lightblue;
+    }
+})
