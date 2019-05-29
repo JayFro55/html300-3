@@ -2,6 +2,8 @@
   <div id="app">
     <app-header></app-header>
 
+    <app-images></app-images>
+
     <router-view></router-view>
     <router-link to="/other">Other</router-link>
     <router-link to="/next">Next</router-link>
@@ -12,15 +14,20 @@
     <p v-else>wordZ</p>
     <button v-on:click="show = !show"></button> -->
 
-    <blog-post post-title="hello!"></blog-post>
+    <!-- <blog-post post-title="hello!"></blog-post>
     <blog-post post-title="bye!"></blog-post>
-    <blog-post post-title="welcome"></blog-post>
+    <blog-post post-title="welcome"></blog-post> -->
 
-    <div>
+    <!-- <div>
       <button-counter></button-counter>
       <button-counter></button-counter>
       <button-counter></button-counter>
-    </div>
+    </div> -->
+
+    <h1>slots</h1>
+    <app-slots>
+      <h2>slots</h2>
+    </app-slots>
 
     <app-footer></app-footer>
 
@@ -36,6 +43,10 @@ export default {
     }
   }
 }
+// <div class="slots">
+//   <slot></slot>
+//   <p>wat</p>
+// </div>
 </script>
 
 <style lang="scss">

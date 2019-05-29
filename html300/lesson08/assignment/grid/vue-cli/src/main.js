@@ -3,10 +3,12 @@ import App from './App.vue'
 
 import Header from './header.vue';
 import Footer from './footer.vue';
+// import images from './images.vue';
 
 Vue.component('app-header', Header);
 
 Vue.component('app-footer', Footer);
+// Vue.component('app-images'), images;
 
 
 import VueRouter from 'vue-router';
